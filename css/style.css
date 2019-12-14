@@ -1,0 +1,432 @@
+/* body {
+    font-family: "Monospace", sans-serif;
+} */
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.home_v1 {
+    height: 100vh;
+    background-image: -moz-linear-gradient(115deg, #A910CF 15%, #25CCF7 100%, #1B9CFC 75%);
+    background-image: -webkit-linear-gradient(115deg, #A910CF 15%, #25CCF7 100%, #1B9CFC 75%);
+    background-image: -ms-linear-gradient(115deg, #A910CF 15%, #25CCF7 100%, #1B9CFC 75%);
+}
+
+.content_home_v1 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 0;
+}
+
+.profile_admin_v1,
+.profile_admin_v2 {
+    height: 575px;
+}
+
+.profile_admin_v1 {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    background: #f1f2f6;
+    border-radius: 10px;
+}
+
+.profession_profile_admin_v1 {
+    width: 60%;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 600;
+    color: #535c68;
+    background: #dfe6e9;
+}
+
+.contact_detail_profile_admin_v1 {
+    padding: 10px 0;
+    background: #dfe6e9;
+}
+
+.item_icon_social_network {
+    font-size: 2em;
+    display: inline-block;
+}
+
+.contact_social_network a:nth-child(1) .item_icon_social_network {
+    color: #be2edd;
+    margin-right: 10px;
+}
+
+.contact_social_network a:nth-child(2) .item_icon_social_network {
+    color: #0984e3;
+}
+
+.item_icon_social_network svg:hover {
+    transform: scale(1.3);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.profile_admin_v1 .logo_img_profile_admin_v1 img {
+    border-radius: 50%;
+    width: 100%;
+    padding: 30px 0 20px 0;
+}
+
+.name_profile_admin_v1 {
+    color: #95afc0;
+    padding-bottom: 5px;
+}
+
+.contact_social_network {
+    padding: 10px 0 20px 0;
+}
+
+.item_contact_detail_v1 {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    line-height: 40px;
+}
+
+.contact_detail_profile_admin_v1 .item_contact_detail_v1 {
+    color: #40739e;
+}
+
+.contact_detail_profile_admin_v1 a .item_contact_detail_v1 {
+    color: #0097e6;
+}
+
+.contact_detail_profile_admin_v1 a .item_contact_detail_v1:hover {
+    color: #ff6b6b;
+}
+
+.item_contact_detail_v1 .icon_v1 {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.item_contact_detail_v1 span {
+    font-size: 20px;
+}
+
+.logo_img_profile_admin_v1 {
+    width: 50%;
+    margin: auto;
+}
+
+.bottom_profile_admin_v1_btn {
+    padding: 25px 0;
+}
+
+.btn_Email_profile_admin_v1 {
+    background: #00a8ff;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #f5f6fa;
+}
+
+.btn_Email_profile_admin_v1:hover {
+    box-shadow: 0px 10px 10px 5px#ccc;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.profile_admin_v2 {
+    width: 72.5%;
+    vertical-align: top;
+    display: inline-block;
+    background: #f1f2f6;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 2%;
+}
+
+.top_profilr_admin_v1 {
+    padding: 20px 20px 40px 20px;
+    background: #fff;
+}
+
+.item_name_title_profile_admin_v1 h1 {
+    color: #535c68;
+    position: relative;
+}
+
+.item_name_title_profile_admin_v1::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #0fbcf9;
+    position: absolute;
+}
+
+.item_top_menu {
+    position: relative;
+}
+
+.item_name_title_profile_admin_v1,
+.item_menu_nav_profile_admin_v1,
+.link_menu_profile_admin_v1 {
+    display: inline-block;
+}
+
+.link_menu_profile_admin_v1 {
+    display: none;
+    position: absolute;
+    right: 12%;
+    top: 0;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid #535c68;
+    width: max-content;
+    padding: 0 20px;
+    height: max-content;
+}
+
+.link_menu_profile_admin_v1 a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    padding: 0 10px;
+    color: #95afc0;
+}
+
+.link_menu_profile_admin_v1 a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    -webkit-text-stroke: 1px #eee;
+    transform: translateX(0);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.link_menu_profile_admin_v1 a:hover::before {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.link_menu_profile_admin_v1 a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    -webkit-text-stroke: 1px #eee;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.link_menu_profile_admin_v1 a:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+    color: #ff7979;
+}
+
+.link_menu_profile_admin_v1 .active::after {
+    content: attr(data-text);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    -webkit-text-stroke: 1px #eee;
+    transition: 0.5s;
+    pointer-events: none;
+    transform: translateX(0);
+    opacity: 1;
+    color: #ff7979 !important;
+}
+
+
+/* .link_menu_profile_admin_v1::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+} */
+
+.item_menu_nav_profile_admin_v1 {
+    float: right;
+    font-size: 2em;
+    background: #18dcff;
+    color: #808e9b;
+    border-radius: 50%;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+.item_menu_nav_profile_admin_v1:hover {
+    box-shadow: 0px 0px 5px 2px#ccc;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    transform: scale(1.1);
+}
+
+.description_profile_admin_v1 {
+    margin-top: 15px;
+}
+
+.item_name_title_bottom_v1 {
+    padding: 40px 20px 20px 0px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+}
+
+.item_name_title_bottom_v1::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.item_name_v1_title_v1 {
+    display: inline-block;
+}
+
+
+/* btn share */
+
+.share_btn_item_profile_admin_v1 {
+    float: right;
+    width: 230px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    transition: .3s linear;
+    background: #dfe6e9;
+}
+
+.share_btn_item_profile_admin_v1:hover {
+    transform: scale(1.1);
+}
+
+.share_btn_item_profile_admin_v1 span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #535c68;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+    transition: .6s linear;
+    border-radius: 40px;
+    opacity: 1;
+}
+
+.share_btn_item_profile_admin_v1:hover span {
+    transform: translateX(-100%);
+    transition-delay: .3s;
+}
+
+.share_btn_item_profile_admin_v1 a {
+    flex: 1;
+    font-size: 26px;
+    color: #2d3436;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.share_btn_item_profile_admin_v1:hover a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.share_btn_item_profile_admin_v1 a:nth-of-type(1) {
+    transition-delay: 1s;
+}
+
+.share_btn_item_profile_admin_v1 a:hover {
+    color: #ff7979;
+}
+
+.share_btn_item_profile_admin_v1 a:nth-of-type(2) {
+    transition-delay: .8s;
+}
+
+.share_btn_item_profile_admin_v1 a:nth-of-type(3) {
+    transition-delay: .6s;
+}
+
+.share_btn_item_profile_admin_v1 a:nth-of-type(4) {
+    transition-delay: .4s;
+}
+
+
+/* btn share */
+
+.item_name_title_bottom_v1 .item_name_v1_title_v1 h2 {
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+.project_profile_admin_v1 {
+    padding: 20px;
+}
+
+.project_profile_admin_v1 .row .col-6 {
+    padding: 15px;
+}
+
+.content_col_6_project_v1 {
+    background: #fff;
+    padding: 15px 15px 15px 0;
+    border-radius: 10px;
+}
+
+.content_col_6_project_v1:hover {
+    box-shadow: 0px 10px 10px 5px#ccc;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+}
+
+.name_project_profile_admin_v1 {
+    color: #808e9b;
+    font-weight: 600;
+}
+
+.description_project_rofile_admin_v1 {
+    font-size: 14px;
+}
+
+.icon_project_profile_admin_v1 {
+    display: inline-block;
+    width: 25%;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: top;
+    color: #8c7ae6;
+}
+
+.content_project_profile_admin_v1 {
+    display: inline-block;
+    width: 73%;
+}
