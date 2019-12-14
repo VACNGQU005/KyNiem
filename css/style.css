@@ -197,6 +197,7 @@ a:hover {
     letter-spacing: 2px;
     font-size: 1.5em;
     padding: 0 10px;
+    display: initial;
     color: #95afc0;
 }
 
