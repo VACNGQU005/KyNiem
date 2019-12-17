@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Quý</title>
+    <meta property="og:site_name" content="Nguyễn Quý" />
+    <meta name="copyright" content="Nguyễn Quý" />
+    <meta name="author" content="Nguyễn Quý" />
+    <meta name="geo.placename" content="Ho Chi Minh, Viet Nam" />
+    <meta name="geo.region" content="VN-HCM" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://vietamedical.com/",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1900 571 543",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.google.com.vn",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.google.com.vn/search?q=site:https://vietamedical.com/+{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .img_content {
+            /* margin-left: calc(30% - 199px);
+            margin-top: calc(30% - 199px); */
+            animation: ani_v1 1s infinite;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        
+        .test {
+            /* position: absolute;
+            top: calc(50% - 199px);
+            left: calc(50% - 199px); */
+            animation: ani_v1 1s infinite;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(#f1aa14, #ffe741, #ffe741, #ffe741);
+        }
+        
+        .img_content img {
+            animation: ani_img_v1 1s infinite;
+        }
+        
+        .loader_v1 {
+            background: #000;
+        }
+        
+        .loader {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            animation: loader 2s linear infinite;
+        }
+        
+        .loader::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            left: 8px;
+            bottom: 8px;
+            background: #000;
+            border-radius: 50%;
+            z-index: 10000;
+        }
+        
+        .loader::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+        
+        @keyframes ani_img_v1 {
+            0% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            100% {
+                transform: translateX(-5px);
+            }
+        }
+        
+        @keyframes ani_v1 {
+            0% {
+                box-shadow: 0 0 0 0px rgba(102, 187, 253, 0.3), 0 0 0 20px rgba(102, 187, 253, 0.3), 0 0 0 40px rgba(102, 187, 253, 0.3), 0 0 0 40px rgba(102, 187, 253, 0.3);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(102, 187, 253, 0.3), 0 0 0 40px rgba(102, 187, 253, 0.3), 0 0 0 60px rgba(102, 187, 253, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="img_content">
+                    <img src="images/step-3-hotline.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="test"></div>
+            </div>
+            <div class="col-lg-4 col-md-4 loader_v1">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
