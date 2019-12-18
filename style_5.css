@@ -295,21 +295,25 @@ section {
 .bg-day {
     position: absolute;
     left: -265px;
+    bottom: 0;
 }
 
 .bg-hour {
     position: absolute;
     left: -108px;
+    bottom: 0;
 }
 
 .bg-minute {
     position: absolute;
     right: -110px;
+    bottom: 0;
 }
 
 .bg-second {
     position: absolute;
     right: -270px;
+    bottom: 0;
 }
 
 .border_bg {
@@ -433,3 +437,34 @@ div#leftwing {
 
 
 /*  */
+
+@media screen and (min-width: 1365px) and (max-width: 1919px) {
+    div#butterfly {
+        width: 320px;
+    }
+    .container h1 {
+        font-size: 9em;
+        line-height: 1em;
+    }
+    .container h1::before {
+        line-height: 1em;
+    }
+    .img_gif_icon {
+        width: 215px;
+    }
+    .flip-clock-divider .flip-clock-label {
+        z-index: 1;
+    }
+    .bg-day {
+        bottom: 50%;
+    }
+    .bg-hour {
+        bottom: 50%;
+    }
+    .bg-minute {
+        bottom: 50%;
+    }
+    .bg-second {
+        bottom: 50%;
+    }
+}
