@@ -24,19 +24,44 @@ body {
 }
 
 .container h1 {
+    position: relative;
     text-align: center;
     font-size: 10em;
     line-height: 0.85em;
-    color: #535c68;
+    background: radial-gradient(circle farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -moz-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -webkit-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -o-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: -80px;
 }
 
-.container h1 span {
+.container h1::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -6px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.85em;
+    background: radial-gradient(circle farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -moz-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -webkit-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    background: -o-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #eee;
+    pointer-events: none;
+}
+
+
+/* .container h1 span {
     display: block;
     font-weight: 900;
     letter-spacing: 6px;
-    /* font-size: 0.2em; */
-}
+} */
 
 .countYear {
     display: flex;
@@ -113,6 +138,34 @@ section {
 .set div {
     position: absolute;
     display: block;
+}
+
+.set:nth-child(1) div {
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    background-image: url(images/pt-1.png);
+}
+
+.set:nth-child(2) div {
+    width: 240px;
+    height: 240px;
+    background-size: 100%;
+    background-image: url(images/pt-1.png);
+}
+
+.set3 div:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    background-image: url(images/pt-1.png);
+}
+
+.set3 div {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    background-image: url(images/pt-1.png);
 }
 
 .set div:nth-child(1) {
@@ -200,4 +253,61 @@ section {
 .set3 {
     transform: scale(0.8) rotateX(180deg);
     filter: blur(4px);
+}
+
+
+/* custom----------------------- */
+
+.countYear_v1 {
+    position: absolute;
+    bottom: 50px;
+}
+
+.flip-clock-divider .flip-clock-label {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e74c3c !important;
+}
+
+.flip-clock-divider .flip-clock-label {
+    right: -108px !important;
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -130px !important;
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -125px !important;
+}
+
+.flip-clock-wrapper .flip {
+    box-shadow: 0 2px 5px rgba(231, 76, 60, 0.7) !important;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+    background: linear-gradient(45deg, #81ecec, transparent 40%, #e5f403);
+}
+
+
+/* bg--- */
+
+.bg-day {
+    position: absolute;
+    left: -265px;
+}
+
+.bg-hour {
+    position: absolute;
+    left: -108px;
+}
+
+.bg-minute {
+    position: absolute;
+    right: -110px;
+}
+
+.bg-second {
+    position: absolute;
+    right: -270px;
 }
