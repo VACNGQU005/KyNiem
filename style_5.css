@@ -86,6 +86,13 @@ body {
     content: 'Seconds';
 }
 
+.img_gif_icon {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 /* animation--------------------- */
 
