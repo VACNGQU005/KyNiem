@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Quý</title>
+    <link rel="canonical" href="https://nguyenquy98.github.io/KyNiem/" />
+    <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    />
+    <meta name="keywords" content="Nguyễn Quý" />
+    <meta property="og:locale" itemprop="inLanguage" content="vi_VN" />
+    <meta property="og:url" content="https://nguyenquy98.github.io/KyNiem/" />
+    <meta property="og:title" content="Nguyễn Quý" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Nguyễn Quý đồng sáng lập file" />
+    <meta property="og:image" content="images/iconlogo.gif" />
+    <meta property="og:site_name" content="Nguyễn Quý" />
+    <meta name="copyright" content="Nguyễn Quý" />
+    <meta name="author" content="Nguyễn Quý" />
+    <meta name="geo.placename" content="Ho Chi Minh, Viet Nam" />
+    <meta name="geo.region" content="VN-HCM" />
+    <meta property="fb:app_id" content="464483827505813" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/bg-date.png" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: orange; */
+        }
+        
+        .wrapper {
+            display: flex;
+            width: 90%;
+            justify-content: space-around;
+        }
+        
+        .wrapper:hover .card {
+            opacity: 0.5;
+        }
+        
+        .wrapper .card:hover {
+            opacity: 1;
+        }
+        
+        .card {
+            width: 280px;
+            height: 360px;
+            border-radius: 15px;
+            padding: 1.5rem;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: 0.4s ease-out;
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .card:hover {
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+        
+        .card:hover:before {
+            opacity: 1;
+        }
+        
+        .card:hover .info {
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 15px;
+        }
+        
+        .card .info {
+            position: relative;
+            z-index: 3;
+            color: white;
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+            transition: 0.5s;
+        }
+        
+        .card .info h1 {
+            margin: 0px;
+        }
+        
+        .card .info p {
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        
+        .card .info button {
+            padding: 0.6rem;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background: white;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+        
+        .card .info button:hover {
+            background: dodgerblue;
+            color: white;
+        }
+        
+        .card::after,
+        .card::before {
+            content: "";
+            position: absolute;
+            border-radius: 15px;
+            opacity: 1;
+            top: -6px;
+            left: -6px;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
+            z-index: -1;
+            animation: ani_dev 20s linear infinite;
+        }
+        
+        .card::after {
+            filter: blur(40px);
+        }
+        
+        @keyframes ani_dev {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 300% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="images/photo-1477666250292-1419fac4c25c.jpg" />
+            <div class="info">
+                <h1>Mountain</h1>
+                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+        </div>
+        <div class="card"><img src="images/photo-1425342605259-25d80e320565.jpg" />
+            <div class="info">
+                <h1>Road</h1>
+                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+        </div>
+        <div class="card"><img src="images/photo-1503249023995-51b0f3778ccf.jpg" />
+            <div class="info">
+                <h1>Protester</h1>
+                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
