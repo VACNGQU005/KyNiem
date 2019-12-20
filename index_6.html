@@ -58,6 +58,10 @@
             opacity: 1;
         }
         
+        .wrapper .card:hover img {
+            filter: grayscale(100%);
+        }
+        
         .card {
             width: 280px;
             height: 360px;
@@ -165,26 +169,44 @@
                 background-position: 0 0;
             }
         }
+        
+        @media screen and (max-width: 770px) {
+            body,
+            html {
+                height: auto;
+            }
+            .card {
+                width: 100%;
+                height: auto;
+                margin: 30px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="card">
-            <img src="images/photo-1477666250292-1419fac4c25c.jpg" />
-            <div class="info">
-                <h1>Mountain</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+    <div class="wrapper row">
+        <div class="col-lg-4 col-12">
+            <div class="card">
+                <img src="images/photo-1477666250292-1419fac4c25c.jpg" />
+                <div class="info">
+                    <h1>Mountain</h1>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+            </div>
         </div>
-        <div class="card"><img src="images/photo-1425342605259-25d80e320565.jpg" />
-            <div class="info">
-                <h1>Road</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+        <div class="col-lg-4 col-12">
+            <div class="card"><img src="images/photo-1425342605259-25d80e320565.jpg" />
+                <div class="info">
+                    <h1>Road</h1>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+            </div>
         </div>
-        <div class="card"><img src="images/photo-1503249023995-51b0f3778ccf.jpg" />
-            <div class="info">
-                <h1>Protester</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+        <div class="col-lg-4 col-12">
+            <div class="card"><img src="images/photo-1503249023995-51b0f3778ccf.jpg" />
+                <div class="info">
+                    <h1>Protester</h1>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button></div>
+            </div>
         </div>
     </div>
 </body>
