@@ -23,11 +23,13 @@ a:hover {
 
 .profile_admin_v1,
 .profile_admin_v2 {
-    height: 575px;
+    width: 100%;
+    max-height: 630px;
+    height: 100%;
 }
 
 .profile_admin_v1 {
-    width: 25%;
+    /* width: 25%; */
     display: inline-block;
     text-align: center;
     background: #f1f2f6;
@@ -138,13 +140,12 @@ a:hover {
 }
 
 .profile_admin_v2 {
-    width: 72.5%;
+    /* width: 72.5%; */
     vertical-align: top;
     display: inline-block;
     background: #f1f2f6;
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 2%;
 }
 
 .top_profilr_admin_v1 {
@@ -393,7 +394,7 @@ a:hover {
     padding: 20px;
 }
 
-.project_profile_admin_v1 .row .col-6 {
+.project_profile_admin_v1 .row .col-lg-6 {
     padding: 15px;
 }
 
@@ -401,6 +402,8 @@ a:hover {
     background: #fff;
     padding: 15px 15px 15px 0;
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .content_col_6_project_v1:hover {
@@ -430,4 +433,64 @@ a:hover {
 .content_project_profile_admin_v1 {
     display: inline-block;
     width: 73%;
+}
+
+
+/* .link_menu_profile_admin_v1::after,
+.link_menu_profile_admin_v1::before {
+    content: "";
+    position: absolute;
+    border-radius: 40px;
+    opacity: 1;
+    top: -6px;
+    left: -6px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    z-index: -1;
+    animation: ani_dev 20s linear infinite;
+}
+
+@keyframes ani_dev {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+} */
+
+
+/* mobile */
+
+@media only screen and (max-width: 770px) {}
+
+@media only screen and (max-width: 450px) {
+    .home_v1 {
+        height: 100%;
+    }
+    .profile_admin_v2 {
+        max-height: max-content;
+    }
+    .profile_admin_v1 {
+        margin-bottom: 20px;
+    }
+    .content_col_6_project_v1 {
+        margin: 10px 0;
+    }
+    .content_col_6_project_v1:nth-last-child(1) {
+        margin: 10px 0 0 0;
+    }
+    .share_btn_item_profile_admin_v1 {
+        float: none;
+    }
+    .link_menu_profile_admin_v1 {
+        right: 0;
+        background-image: linear-gradient(to bottom right, #eb4d4b, #e5f403, #e056fd, rgba(129, 236, 236, 0.7));
+        top: 70px;
+    }
 }
