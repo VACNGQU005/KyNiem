@@ -19,6 +19,8 @@ a:hover {
     margin: 0 auto;
     max-width: 1000px;
     padding: 20px 0;
+    align-items: center;
+    height: 100%;
 }
 
 .profile_admin_v1,
