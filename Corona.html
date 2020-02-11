@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+    <title>Corona</title>
+</head>
+
+<body>
+    <div id="mapid"></div>
+    <style>
+        #mapid {
+            height: 100vh;
+        }
+        
+        .legend {
+            line-height: 18px;
+            color: #555;
+        }
+        
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script>
+        var map = L.map('mapid').setView([16, 108], 3);
+
+        L.tileLayer('https://api.maptiler.com/maps/darkmatter/{z}/{x}/{y}.png?key=5PA5iBJVnbj79vvI80Vk', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+            // maxZoom: 100,
+        }).addTo(map);
+        // L.marker([21.3609, 105.5474]).addTo(map)
+        //     
+        map.setZoom(5);
+        var myObj = {
+            "provinces": [{
+                "Province_Name": "Vĩnh Phúc",
+                "Province_Id": "province_01",
+                "Lat": "21.3609",
+                "Long": "105.5474",
+                "Confirmed": "3",
+            }, {
+                "Province_Name": "Hồ Chí Minh",
+                "Province_Id": "province_02",
+                "Lat": "10.82302",
+                "Long": "106.62965",
+                "Confirmed": "3",
+            }, {
+                "Province_Name": "Khánh Hoà",
+                "Province_Id": "province_03",
+                "Lat": "12.2585",
+                "Long": "109.0526",
+                "Confirmed": "1",
+            }, {
+                "Province_Name": "Thanh Hoá",
+                "Province_Id": "province_04",
+                "Lat": "19.8",
+                "Long": "105.76667",
+                "Confirmed": "1",
+            }, {
+                "Province_Name": "Hà Nội",
+                "Province_Id": "province_05",
+                "Lat": "21.0245",
+                "Long": "105.84117",
+                "Confirmed": "2",
+            }]
+        };
+        var item_popup, item_lat, item_long, item_Province_Name;
+        // var circle = [];
+        // for (var t = 0; t < myObj.provinces.length; t++) {
+        //     popup.push(myObj.provinces[t].Province_Id);
+        // }
+        for (var i = 0; i < myObj.provinces.length; i++) {
+            var circle;
+            var popup;
+
+            circle = L.circle([myObj.provinces[i].Lat, myObj.provinces[i].Long], {
+                color: 'rgb(230, 0, 0)',
+                fillColor: 'rgb(230, 0, 0)',
+                fillOpacity: 0.5,
+                radius: 50000,
+                weight: 0
+            }).addTo(map);
+
+            item_popup = myObj.provinces[i].Province_Id;
+            item_lat = myObj.provinces[i].Lat;
+            item_long = myObj.provinces[i].Long;
+            item_Province_Name = myObj.provinces[i].Province_Name;
+            console.log(item_lat);
+            console.log(item_long);
+            console.log(item_Province_Name);
+            circle.on('mouseover', function(e) {
+                if (map) {
+                    popup = L.popup()
+                        .setLatLng([item_lat, item_long])
+                        .setContent(item_Province_Name)
+                        .openOn(map);
+                }
+            });
+            circle.on('mouseout', function(e) {
+                if (popup && map) {
+                    map.closePopup(popup);
+                    popup = null;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
