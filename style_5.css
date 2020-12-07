@@ -26,7 +26,7 @@ body {
 .container h1 {
     position: relative;
     text-align: center;
-    font-size: 10em;
+    font-size: 11em;
     line-height: 0.85em;
     background: radial-gradient(circle farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
     background: -moz-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
