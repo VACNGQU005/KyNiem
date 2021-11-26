@@ -39,30 +39,34 @@
 
         body {
             height: 100vh;
-            background: #000;
+            background: #ccc;
         }
 
         .container {
             width: 100%;
             height: 100%;
             position: relative;
-            background-color: black;
             overflow: hidden;
             filter: contrast(20);
-            display: flex;
+            display: inline-flex;
             justify-content: center;
             align-items: center;
         }
 
         .name-title-1 {
-            color: white;
-            font-size: 8rem;
+            background: radial-gradient(circle farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+            background: -moz-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+            background: -webkit-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+            background: -o-radial-gradient(circle, farthest-corner, #eb4d4b, red, #e5f403, #81ecec, rgba(108, 92, 231, 0.7), rgba(232, 67, 147, 0.7));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 5rem;
             font-weight: 700;
-            text-transform: uppercase;
+            text-transform: uppercase;transition-delay: 5s;
             animation: letterspacing 7s infinite alternate cubic-bezier(.2, 0, 0, 1);
             display: block;
+            
         }
-
         @keyframes letterspacing {
             0% {
                 letter-spacing: -5rem;
@@ -70,12 +74,14 @@
             }
 
             50% {
-                filter: blur(0.2rem);
+                filter: blur(0.3rem);
             }
-
+            75% {
+                filter: blur(0.1rem);
+            }
             100% {
-                letter-spacing: 1rem;
-                filter: blur(1.5rem);
+                letter-spacing: 0.7rem;
+                filter: blur(0);
             }
         }
     </style>
@@ -84,6 +90,7 @@
 <body>
     <div class="container">
         <div class="name-title-1">Chúc mừng</div>
+        <div class="name-title-1 dellay">Năm Mới 2022</div>
     </div>
 </body>
 
