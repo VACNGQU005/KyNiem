@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Mã màu</title>
+    <style>
+        .col-md-3 {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-3">3E503C</div>
+        <div class="col-md-3">7F886A</div>
+        <div class="col-md-3">F3ECDB</div>
+        <div class="col-md-3">FF6F3D</div>
+        <div class="col-md-3">ED4D8B</div>
+        <div class="col-md-3">F3A8BB</div>
+        <div class="col-md-3">FCF1F0</div>
+        <div class="col-md-3">F8BF80</div>
+        <div class="col-md-3">F744E</div>
+        <div class="col-md-3">F7F8FE</div>
+        <div class="col-md-3">78BCC4</div>
+        <div class="col-md-3">002C3E</div>
+        <div class="col-md-3">FFA883</div>
+        <div class="col-md-3">FDE3C8</div>
+        <div class="col-md-3">FAF2E8</div>
+        <div class="col-md-3">6FC7E1</div>
+        <div class="col-md-3">1E0233</div>
+        <div class="col-md-3">342D50</div>
+        <div class="col-md-3">895575</div>
+        <div class="col-md-3">E7D3CC</div>
+        <div class="col-md-3">FFB6B6</div>
+        <div class="col-md-3">F3FIE7</div>
+        <div class="col-md-3">FFFFFF</div>
+        <div class="col-md-3">484E5D</div>
+        <div class="col-md-3">8333E9</div>
+        <div class="col-md-3">FF7FAE</div>
+        <div class="col-md-3">FFC6BF</div>
+        <div class="col-md-3">F9F7F1</div>
+        <div class="col-md-3">361040</div>
+        <div class="col-md-3">F7DCDC</div>
+        <div class="col-md-3">F9F7F0</div>
+        <div class="col-md-3">F54DA3</div>
+        <div class="col-md-3">222222</div>
+        <div class="col-md-3">FD5825</div>
+        <div class="col-md-3">F7EFE5</div>
+        <div class="col-md-3">3FABAF</div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        var arrayCodeText = [];
+        $(".col-md-3").each(function() {
+            if (($.trim($(this).text()).length > 0)) {
+                arrayCodeText.push($(this).text());
+            }
+            this.style.background = '#' + $.trim($(this).text());
+        });
+        console.log(arrayCodeText);
+    </script>
+</body>
+
+</html>
