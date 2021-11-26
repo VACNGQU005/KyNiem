@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Row Column</title>
+    <link rel="canonical" href="https://nguyenquy98.github.io/KyNiem/" />
+    <meta name="description"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+    <meta name="keywords" content="Nguyễn Quý" />
+    <meta property="og:locale" itemprop="inLanguage" content="vi_VN" />
+    <meta property="og:url" content="https://nguyenquy98.github.io/KyNiem/" />
+    <meta property="og:title" content="Nguyễn Quý" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Nguyễn Quý đồng sáng lập file" />
+    <meta property="og:image" content="images/iconlogo.gif" />
+    <meta property="og:site_name" content="Nguyễn Quý" />
+    <meta name="copyright" content="Nguyễn Quý" />
+    <meta name="author" content="Nguyễn Quý" />
+    <meta name="geo.placename" content="Ho Chi Minh, Viet Nam" />
+    <meta name="geo.region" content="VN-HCM" />
+    <meta property="fb:app_id" content="485667225626162" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/bg-date.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #f5f5f5;
+            padding: 15px;
+        }
+
+        .flex {
+            --spacing: 15px;
+            --column: 2;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: calc(-1 * var(--spacing));
+            margin-bottom: calc(-1 * var(--spacing));
+        }
+
+        .flex>* {
+            margin-left: var(--spacing);
+            margin-bottom: var(--spacing);
+            width: calc(100% / var(--column) - var(--spacing));
+        }
+
+        .flex-img {
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #181818;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-item"><img src="images/bg-1.jpg" class="flex-img" alt=""></div>
+        <div class="flex-item"><img src="images/bg-2.jpg" class="flex-img" alt=""></div>
+        <div class="flex-item"><img src="images/bg-3.jpg" class="flex-img" alt=""></div>
+        <div class="flex-item"><img src="images/bg-4.jpg" class="flex-img" alt=""></div>
+    </div>
+</body>
+
+</html>
